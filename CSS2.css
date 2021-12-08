@@ -1,0 +1,29 @@
+div{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+#div3{
+    background-color: purple;
+    top : 20px;
+    left: 20px;
+    position: sticky;
+    /*fixed : window 안에서 이동 / 웹페이지 자체.. 바디테그영향없어
+            sticky: 스크롤을 내려도 고정시킨다. */
+}
+
+#container{
+    background-color: yellow ;
+    width: 50px;
+    height: 600px;
+    top: 50px;
+    left: 100px;
+    
+    /*position : static 기본값 
+      position : absolute 상위 태그 기준으로 위치가 조정
+      position : relative 초기 위치에서 이동한다 
+      absolute나 relativ 둘다 잘 써!! 상황에 따라서!! */
+    
+}

@@ -1,0 +1,16 @@
+div,span{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+
+}
+div{
+    background-color: red;
+    /* inline-block : 태그들이 한줄에 표현되며, width와 height가 반영*/
+    display: inline-block;
+    
+}
+span{
+    background-color: green;
+    
+}

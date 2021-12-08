@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" placeholder="ID">
+        <br>
+        <label for="b"> 아이디를 작성 </label>
+        <!-- input 태그의 id 값이 적어지면 됨 그래서 b-->
+        <input type="text" id="b">
+        <br><br>
+        <!-- text 입력하는거 만들기-->
+        <!-- value 텍스트 입력하는데에 기본값-->
+        <!-- autofocus :자동으로 커서 올림-->
+        <!-- datalist랑 input이랑 연결-->
+        
+        <input type="text" list="song">
+        <datalist id="song">
+            <option value="다만세">소녀시대</option>
+            <option value="텔미">원더걸스</option>
+            <option value="거짓말">빅뱅</option>
+        </datalist>
+        <br><br>
+        <select  name="" id="">
+            <!--꼭이거 써야!-->
+            <option>메일선택</option>
+            <option value="네이버">naver.com</option>
+            <option value="다음">daum</option>
+        </select>
+        <br><br>
+        <input type="password">
+        <br><br>
+        <!--네모선택,중복선택 가능-->
+        축구<input type="checkbox">
+        농구<input type="checkbox">
+        <br>
+        <!--동그라미 선택,1개만 선택가능-->
+        <!--똑같이 안하면 안됨!! 똑같이 gender-->
+        남자<input type="radio" name="gender">
+        여자<input type="radio" name="gender">
+        <br>
+        <input type="file"> <!-- 파일첨부-->
+        <br><br>
+        <input type="color"> <!-- 색 조정-->
+        <br><br>
+        <input type="number"> <!-- 숫자 카운터-->
+        <br><br>
+        <input type="range"> <!--범위 지정-->
+        <br><Br>
+        <input type="date"> <!-- 날짜 지정-->
+        <br><br>
+        <input type="datetime-local"> <!--날자 시간까지-->
+        <br><br>
+        초기화
+        <input type="reset">
+        보내기
+        <input type="submit">
+
+
+    </form>
+</body>
+
+</html>

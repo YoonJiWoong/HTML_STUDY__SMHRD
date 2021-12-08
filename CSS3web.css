@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    section{
+        width: 100%;
+        height: 100vh;
+        /* %를 사용했을시 body 태그 크기를 조절해야하는 번거로움
+        색을 섞는것!!*/
+       
+        background: radial-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/bg.jpg);
+        /* radial-gradient 배경화면을 살짝 어둡게해주는 효과*/
+        background-repeat: no-repeat;
+    }
+
+    header{
+        width: 80%;
+        height: 80px;
+        margin: 0 auto;
+        display:  flex;
+        justify-content: space-between;
+        /*flex도 쓰고, space-between 도 써야 태그의 위치를 양 끝으로 이동 */
+
+        align-items: center;    /*header의 아이템들의 위치 변경*/
+        /* 영역의 수직방향 중앙에 위치시켜줌*/
+
+    }
+
+    header > h1 > a{
+        color: white; 
+        text-decoration: none; /*택스트의 줄 없애기*/
+
+    }
+    
+    nav>ul>li{
+        display: inline-block; /* 가로로 */
+        margin: 0 10px; /*위아래 0 좌우 10 한줄로 쓸려고... */
+
+
+    }
+    nav>ul>li>a{
+        color: white;
+        text-decoration: none;
+    }
+
+    nav>ul>li>a:hover{
+        color : wheat;
+    }
+
+    main{
+        position: absolute;
+        left: 50%;
+        top : 50%;
+        color: white;
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }
+
+    main>h2{
+        font-size : 50px;
+        margin-bottom: 25px;
+    }
+    main > p{
+        font-size : 30px;
+        margin-bottom: 25px;
+    }
+    main > button{
+        background: none ;
+        cursor: pointer;/*마우스 손*/
+        outline: none;
+        border: 2px solid white;
+        color: white;
+        border-radius: 20%;
+        padding: 15px 20px;
+
+        transition: all .5s;
+        /*모든 변화 작업을 0.5만큼걸리게*/
+    }
+    main > button:hover{
+        background-color: darkgrey;
+    }
